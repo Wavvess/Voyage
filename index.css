@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+    font-family: "Inter", sans-serif;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo-container a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 1px #383838 solid;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+nav ul li{
+    margin-right: 50px;
+    font-weight: 400;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-tags::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8a04d8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover:after{
+    width: 100%;
+}
+
+.nav-btns{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px; 
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.li-btns{
+    margin-right: 0;
+}
+
+.log-in{
+    background-color: #000;
+    color: #e2e2e2;
+    margin-right: 20px;
+    transition: 0.8s ease;
+}
+
+.sign-up{
+    background-color: #363636;
+    color: #e2e2e2;
+}
+
+.log-animation{
+transition: 0.8s ease;
+}
+
+.log-animation:hover{
+    scale: 1.03;
+}
+
+
+.log-in:hover{
+    box-shadow: 0px 0px 5px 10px rbga(255,255,255,0.15);
+    background-image: linear-gradient(270deg, #3308a8 20%, #9e0dd8 100%);
+}
+
+.sign-up:hover{
+    box-shadow: 0px 0px 5px 10px rbga(255,255,255,0.15);
+    background-image: linear-gradient(90deg, #3308a8 20%, #9e0dd8 100%);
+}
+
+
+/* header section */
+
+.header{
+    width: 100%;
+    padding: 0px 175px;
+    height: 45vh;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container{
+    background: url(images/main-backgroundjpg.jpg);
+    background-size: cover;
+    height: inherit;
+    background-size: cover;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 35px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.text-container h1{
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+#art-span{
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.text-container p{
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 60px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    background: #1a1a1a;
+    border: 1px solid #555;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.search-box input[type="text"]{
+    border: none; 
+    background: transparent;
+    color: #fff;
+    margin-right: 10px;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: ease;
+}
+
+.search-box input[type="text"]:focus{
+    outline: none;
+    border: 3px solid #3308a8;
+    border-radius: 6px;
+}
+
+.search-box .search-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.search-box .search-btn:hover{
+    background-color: #3308a8;
+    scale: 1.03;
+    box-shadow: 0px 5px 10px rgba(10, 13, 214, 0.3);
+}
+
+
+.search-box .fa-magnifying-glass {
+    color: gray;
+    margin-right: 6px;
+}
+
+/* trending art */
+
+.trending-art{
+    padding: 50px 100px;
+}
+
+.trend-container{
+    display: flex;
+}
+
+.trending-art h3{
+    color: #f1f1f1;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.item-container{
+
+}
+
+.item-container img{
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+    height: 200px;
+}
+
+.item-container img:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+    margin-bottom: 8px;
+}
+
+.item-container h5{
+    color: #f1f1f1;
+    font-size: 18px;
+}
